@@ -28,6 +28,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'gaussian_blur = camera_pipeline.gaussian_blur:main',
         ],
     },
 )
