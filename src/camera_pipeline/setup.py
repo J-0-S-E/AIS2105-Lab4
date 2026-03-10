@@ -29,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'gaussian_blur = camera_pipeline.gaussian_blur:main',
+            'canny_edge = camera_pipeline.canny_edge:main',
         ],
     },
 )

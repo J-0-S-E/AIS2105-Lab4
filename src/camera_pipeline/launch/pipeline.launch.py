@@ -7,7 +7,10 @@ def generate_launch_description():
         package='image_proc',
         executable='rectify_node',
         name='rectify_node',
-        output='screen'
+        output='screen',
+        remappings=[
+            ('image', 'image_raw'),
+        ]
     )
 
     gaussian_blur_node = Node(

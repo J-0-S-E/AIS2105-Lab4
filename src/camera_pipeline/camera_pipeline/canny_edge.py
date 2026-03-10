@@ -48,8 +48,8 @@ class CannyEdgeNode(Node):
         Defining and converting "cv_edge" for later use
         """
 
-        cv_edge = cv2.Canny(cv_image,100,200)
-        cv_edge = cv2.cvtColor(cv_edge, cv2.COLOR_BGR2GRAY)
+        cv_edge = cv2.Canny(cv_image, 100, 200)
+        cv_edge = cv2.cvtColor(cv_edge, cv2.COLOR_GRAY2BGR)
 
         # Convert back to ROS Image message
         try:

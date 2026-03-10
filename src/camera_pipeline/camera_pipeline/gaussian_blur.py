@@ -48,7 +48,7 @@ class GaussianBlurNode(Node):
         # Legg koden din her
         # cv_image er bildet du skal bruke som input
         # cv_blurred (en variabel du lager selv) skal være sluttresultatet etter å bruke gaussisk uskarphet.
-        cv_blurred = cv2.GaussianBlur(cv_image, (5, 5), 0)
+        cv_blurred = cv2.GaussianBlur(cv_image, (31, 31), 0)
 
         # Convert back to ROS Image message
         try:
